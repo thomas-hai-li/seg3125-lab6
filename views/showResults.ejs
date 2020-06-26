@@ -1,27 +1,47 @@
 <html lang="en-US">
+
 <head>
-    <title>Survey Analysis</title>
+    <title>UI Survey Analysis</title>
 </head>
 
 <body>
-    <h1>Survey analysis</h1>
-    <h2>Colors</h2>
+    <h1>UI Survey analysis</h1>
+    <h2>Strongest Aspect</h2>
     <ul>
-    <% for (var i=0; i<results[0].length; i++){ %>
-        <li><%= results[0][i].color %> :  <%= results[0][i].count %></li>
-    <% } %>    
+        <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i]['strongest-aspect'] %> : <%= results[0][i].count %></li>
+        <% } %>
     </ul>
-    <h2>Fruits</h2>
+    <h2>Other Aspects</h2>
     <ul>
-    <% for (var i=0; i<results[1].length; i++){ %>
-        <li><%= results[1][i].fruit %> :  <%= results[1][i].count %></li>
-    <% } %>    
+        <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i]['other-aspects'] %> : <%= results[1][i].count %></li>
+        <% } %>
     </ul>
-    <h2>Animals</h2>
+    <h2>Best Target Audience</h2>
     <ul>
-    <% for (var i=0; i<results[2].length; i++){ %>
-        <li><%= results[2][i].animal %> :  <%= results[2][i].count %></li>
-    <% } %>    
+        <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i]['best-target-audience'] %> : <%= results[2][i].count %></li>
+        <% } %>
+    </ul>
+    <h2>Comments on Attraction</h2>
+    <ul>
+        <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i]['comments-attraction'] %> : <%= results[3][i].count %></li>
+        <% } %>
+    </ul>
+    <h2>Extra Comments</h2>
+    <ul>
+        <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i]['comments-extra'] %> : <%= results[4][i].count %></li>
+        <% } %>
+    </ul>
+    <h2>Agree Good UI</h2>
+    <ul>
+        <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i]['agree-good-ui'] %> : <%= results[5][i].count %></li>
+        <% } %>
     </ul>
 </body>
+
 </html>
