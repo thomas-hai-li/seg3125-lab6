@@ -1,12 +1,12 @@
 {
-  "name": "colorsurvey",
+  "name": "ui-survey",
   "version": "1.0.0",
-  "description": "A survey on color preference",
+  "description": "A survey on Spotify's UI design",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Caroline Barrière",
+  "author": "Thomas Hai Li",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
