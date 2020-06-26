@@ -5,38 +5,49 @@
 </head>
 
 <body>
-    <h1>UI Survey analysis</h1>
+    <h1>UI Survey Analysis</h1>
     <h2>Strongest Aspect</h2>
+    <p>Question: "Out of the following, what do you think is the strongest aspect of the UI's design?"</p>
+    <p>Answers...</p>
     <ul>
         <% for (var i=0; i<results[0].length; i++){ %>
         <li><%= results[0][i]['strongest-aspect'] %> : <%= results[0][i].count %></li>
         <% } %>
     </ul>
     <h2>Other Aspects</h2>
+    <p>Question: "Out of the following, what other aspects do you like about the design?"</p>
+    <p>Answers...</p>
     <ul>
         <% for (var i=0; i<results[1].length; i++){ %>
         <li><%= results[1][i]['other-aspects'] %> : <%= results[1][i].count %></li>
         <% } %>
     </ul>
-    <h2>Best Target Audience</h2>
+    <h2>Target Audience</h2>
+    <p>Question: "Which target audience would you think would have least difficulty navigating the UI?"</p>
+    <p>Answers...</p>
     <ul>
         <% for (var i=0; i<results[2].length; i++){ %>
         <li><%= results[2][i]['best-target-audience'] %> : <%= results[2][i].count %></li>
         <% } %>
     </ul>
     <h2>Comments on Attraction</h2>
+    <p>Question: "Based on your intuition, are you attracted / repulsed / indifferent by the UI design? Why or why not?"
+    </p>
+    <p>Answers...</p>
     <ul>
         <% for (var i=0; i<results[3].length; i++){ %>
-        <li><%= results[3][i]['comments-attraction'] %> : <%= results[3][i].count %></li>
+        <li><%= results[3][i]['comments-attraction'] %></li>
         <% } %>
     </ul>
     <h2>Extra Comments</h2>
     <ul>
         <% for (var i=0; i<results[4].length; i++){ %>
-        <li><%= results[4][i]['comments-extra'] %> : <%= results[4][i].count %></li>
+        <li><%= results[4][i]['comments-extra'] %></li>
         <% } %>
     </ul>
     <h2>Agree Good UI</h2>
+    <p>Question: "If you were to continue using Spotify, a large contributing factor is because of good UI design."</p>
+    <p>Answers (5 = strongly agree, 1 = strongly disagree)...</p>
     <ul>
         <% for (var i=0; i<results[5].length; i++){ %>
         <li><%= results[5][i]['agree-good-ui'] %> : <%= results[5][i].count %></li>

@@ -1,1 +1,18 @@
-[{"strongest-aspect":"adaptable-colors","count":1},{"strongest-aspect":"simplicity","count":2},{"strongest-aspect":"layout","count":1},{"strongest-aspect":"functionality","count":1}]
+[
+  {
+    "strongest-aspect": "adaptable-colors",
+    "count": 0
+  },
+  {
+    "strongest-aspect": "simplicity",
+    "count": 1
+  },
+  {
+    "strongest-aspect": "layout",
+    "count": 0
+  },
+  {
+    "strongest-aspect": "functionality",
+    "count": 0
+  }
+]

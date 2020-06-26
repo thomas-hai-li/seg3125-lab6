@@ -65,9 +65,13 @@ module.exports = function (app) {
         console.log(req.body);
         var json = req.body;
         for (var key in json) {
-            console.log(key + ": " + json[key]);
+            // in the case of blank comments, skip this iteration
+            if (json[key] === "") {
+                continue;
+            }
+
             // in the case of checkboxes, the user might check more than one
-            if ((key === "other-aspects") && (json[key].length === 2)) {
+            if ((key === "other-aspects") && (json[key].length >= 2)) {
                 for (var item in json[key]) {
                     combineCounts(key, json[key][item]);
                 }

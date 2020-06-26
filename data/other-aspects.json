@@ -1,1 +1,26 @@
-[{"other-aspects":["check-simplicity","check-layout","check-functionality"],"count":1},{"other-aspects":["check-adaptable-colors","check-consistency","check-standout"],"count":1},{"other-aspects":"check-simplicity","count":1}]
+[
+  {
+    "other-aspects": "simplicity",
+    "count": 1
+  },
+  {
+    "other-aspects": "adaptable-colors",
+    "count": 0
+  },
+  {
+    "other-aspects": "layout",
+    "count": 1
+  },
+  {
+    "other-aspects": "functionality",
+    "count": 0
+  },
+  {
+    "other-aspects": "consistency",
+    "count": 1
+  },
+  {
+    "other-aspects": "standout",
+    "count": 0
+  }
+]
