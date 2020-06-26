@@ -45,30 +45,30 @@
     </section>
 
 
-    <section class="form-part1 hidden">
-      <p>3 questions - time to collect your data! >:)</p>
+    <form>
+      <section class="form-section form-part1 hidden">
+        <p>Time to collect your data! >:)</p>
 
-      <form>
         <ol>
           <!-- Question -->
           <li>
             Of the following, what do you think is the <strong>strongest</strong> aspect of the UI's design?
             <ul>
               <li>
-                <input type="radio" name="" id="">
-                <label>It's simplicity</label>
+                <input type="radio" name="strongest-aspect" value="simplicity" id="radio-simplicity">
+                <label for="radio-simplicity">It's simplicity</label>
               </li>
               <li>
-                <input type="radio" name="" id="">
-                <label>The adaptable colour scheme</label>
+                <input type="radio" name="strongest-aspect" value="adaptable-colors" id="radio-adaptable-colors">
+                <label for="radio-adaptable-colors">The adaptable colour scheme</label>
               </li>
               <li>
-                <input type="radio" name="" id="">
-                <label>Layout between buttons, album art, etc.</label>
+                <input type="radio" name="strongest-aspect" value="layout" id="radio-layout">
+                <label for="radio-layout">Layout between buttons, album art, etc.</label>
               </li>
               <li>
-                <input type="radio" name="" id="">
-                <label>Functionality (ie. playing a new song pauses the last song)</label>
+                <input type="radio" name="strongest-aspect" value="functionality" id="radio-functionality">
+                <label for="radio-functionality">Functionality (ie. playing a new song pauses the last song)</label>
               </li>
             </ul>
           </li>
@@ -78,30 +78,31 @@
             <div>
               <ul>
                 <li>
-                  <input type="checkbox" name="" id="">
-                  <label>It's simplicity</label>
+                  <input type="checkbox" name="other-aspects" value="check-simplicity" id="check-simplicity">
+                  <label for="check-simplicity">It's simplicity</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="" id="">
-                  <label>The adaptable colour scheme</label>
+                  <input type="checkbox" name="other-aspects" value="check-adaptable-colors"
+                    id="check-adaptable-colors">
+                  <label for="check-adaptable-colors">The adaptable colour scheme</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="" id="">
-                  <label>Relative layout between elements</label>
+                  <input type="checkbox" name="other-aspects" value="check-layout" id="check-layout">
+                  <label for="check-layout">Relative layout between elements</label>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <input type="checkbox" name="" id="">
-                  <label>Functionality</label>
+                  <input type="checkbox" name="other-aspects" value="check-functionality" id="check-functionality">
+                  <label for="check-functionality">Functionality</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="" id="">
-                  <label>Consistency of the layout</label>
+                  <input type="checkbox" name="other-aspects" value="check-consistency" id="check-consistency">
+                  <label for="check-consistency">Consistency of the layout</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="" id="">
-                  <label>Important menu items stand out</label>
+                  <input type="checkbox" name="other-aspects" value="check-standout" id="check-standout">
+                  <label for="check-standout">Important menu items stand out</label>
                 </li>
               </ul>
             </div>
@@ -111,7 +112,7 @@
             <p>
               Which target audience would you think would have least difficulty navigating the UI?
             </p>
-            <select name="" id="">
+            <select name="best-target-audience" id="best-target-audience">
               <option value="children">Children</option>
               <option value="teens">Teens</option>
               <option value="young-adults">Young adults</option>
@@ -121,32 +122,31 @@
             </select>
           </li>
         </ol>
-      </form>
 
-      <section class="nav">
-        <i id="to-page-1" class="material-icons">arrow_back</i>
-        <i id="to-page-3" class="material-icons">arrow_forward</i>
+        <section class="nav">
+          <i id="to-page-1" class="material-icons">arrow_back</i>
+          <i id="to-page-3" class="material-icons">arrow_forward</i>
+        </section>
+        <p class="hint">(you can use the right & left arrows to navigate)</p>
+
       </section>
-      <p class="hint">(you can use the right & left arrows to navigate)</p>
 
-    </section>
+      <section class="form-section form-part2 hidden">
+        <p>last 3 questions...</p>
 
-    <section class="form-part2 hidden">
-      <p>last 3 questions...</p>
-
-      <form>
         <ol start="4">
           <!-- Question -->
           <li>
             <p>
               Based on your intuition, are you attracted / repulsed / indifferent by the UI design? Why or why not?
             </p>
-            <textarea class="comments" cols="50" rows="3"></textarea>
+            <textarea class="comments" id="comments-attraction" name="comments-attraction" cols="50"
+              rows="3"></textarea>
           </li>
           <!-- Question -->
           <li>
             <p>Extra comments:</p>
-            <textarea class="comments" cols="50" rows="3"></textarea>
+            <textarea class="comments" id="comments-extra" name="comments-extra" cols="50" rows="3"></textarea>
           </li>
           <!-- Question -->
           <li>
@@ -154,20 +154,20 @@
               design.</p>
             <div class="form-slider-area">
               <span class="form-slider-extreme">Strongly Disagree</span>
-              <input class="form-slider" type="range" name="" id="" min="1" max="5" step="1">
+              <input class="form-slider" type="range" name="agree-good-ui" id="agree-good-ui" min="1" max="5" step="1">
               <span class="form-slider-extreme">Strongly Agree</span>
             </div>
           </li>
         </ol>
-      </form>
 
-      <h3 class="submit-button">submit</h3>
+        <button type="submit" class="submit-button">submit</button>
 
-      <section class="nav">
-        <i id="back-page-2" class="material-icons">arrow_back</i>
+        <section class="nav">
+          <i id="back-page-2" class="material-icons">arrow_back</i>
+        </section>
+        <p class="hint">(you can use the right & left arrows to navigate)</p>
       </section>
-      <p class="hint">(you can use the right & left arrows to navigate)</p>
-    </section>
+    </form>
 
     <section class="submitted hidden">
       <p class="featured__description">Submitted - thanks for your input :)</p>

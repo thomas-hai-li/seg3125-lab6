@@ -15,6 +15,10 @@ section {
   align-items: center;
 }
 
+.form-section {
+  width: 40em;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -119,10 +123,9 @@ ol>li:nth-child(2)>div {
 }
 
 .submit-button {
+  border:none;
   cursor: pointer;
   background-color: rgba(32, 252, 143, 0.1);
-  background-image: url('../img/glitter.gif');
-  background-position: center;
 }
 
 /* .container initial fadein */
